@@ -1,0 +1,17 @@
+    1  git clone https://github.com/UkhachO/myPractRepo
+    2  ls
+    3  cd OneDrive/Desktop/Web-develobment/myPractRepo/
+    4  git checkout -b feature
+    5  echo 'my new repo' > README.md
+    6  echo 'node_modules/' > .gitignore
+    7  git status
+    8  git add -A
+    9  git commit -a -m 'add README.md end .gitignore'
+   10  git push -u origin feature 
+   11  git commit --amend -m "add README.md end .gitignore (amend)"
+   12  git push --force
+   13  git checkout main
+   14  git pull origin main
+   15  git merge feature 
+   16  git push origin main
+   17  history > history.txt
